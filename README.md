@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# 📄 PDFKit - 免费在线PDF工具箱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3 align="center">合并 · 拆分 · 压缩 · 水印 · 图片转PDF · 旋转</h3>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://tyr1105.github.io/pdfkit/">
+    <img src="https://img.shields.io/badge/在线使用-Live_Demo-orange?style=for-the-badge" alt="Live Demo">
+  </a>
+  <img src="https://img.shields.io/badge/价格-免费-green?style=for-the-badge" alt="Free">
+  <img src="https://img.shields.io/badge/无需注册-blue?style=for-the-badge" alt="No Signup">
+  <img src="https://img.shields.io/badge/纯浏览器处理-隐私安全-purple?style=for-the-badge" alt="Privacy">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ 功能特色
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📎 **PDF合并** — 多个PDF合并为一个文件
+- ✂️ **PDF拆分** — 按页码范围拆分PDF
+- 🗜️ **PDF压缩** — 减小PDF文件体积
+- 💧 **添加水印** — 给PDF添加文字水印
+- 🖼️ **图片转PDF** — 多张图片合成PDF
+- 🔄 **PDF旋转** — 旋转PDF页面方向
+- 🔒 **纯浏览器处理** — 文件不上传服务器，隐私安全
+- 🚫 **无需注册** — 打开即用
 
-## Expanding the ESLint configuration
+## 🚀 立即使用
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+👉 https://tyr1105.github.io/pdfkit/
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ 技术栈
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+React · TypeScript · pdf-lib · PDF.js
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p align="center">Made with ❤️ by <a href="https://github.com/tyr1105">tyr1105</a></p>
